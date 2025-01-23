@@ -608,6 +608,10 @@ video {
   margin: auto;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -664,6 +668,10 @@ video {
 
 .gap-\[60px\] {
   gap: 60px;
+}
+
+.gap-\[50px\] {
+  gap: 50px;
 }
 
 .border {
@@ -736,7 +744,23 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:items-center {
+    align-items: center;
+  }
+
   .lg\:gap-\[200px\] {
     gap: 200px;
+  }
+
+  .lg\:gap-\[50px\] {
+    gap: 50px;
   }
 }
