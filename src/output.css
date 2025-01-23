@@ -554,38 +554,100 @@ video {
   display: none;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.absolute {
+  position: absolute;
+}
+
 .m-auto {
   margin: auto;
-}
-
-.my-\[20px\] {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.my-\[50px\] {
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .flex {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .hidden {
   display: none;
 }
 
-.w-\[80\%\] {
-  width: 80%;
+.h-1 {
+  height: 0.25rem;
 }
 
-.w-\[20\%\] {
-  width: 20%;
+.max-w-\[1200px\] {
+  max-width: 1200px;
 }
 
-.flex-col {
-  flex-direction: column;
+.shrink {
+  flex-shrink: 1;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .items-center {
@@ -596,94 +658,85 @@ video {
   justify-content: space-between;
 }
 
-.gap-\[20px\] {
-  gap: 20px;
+.gap-\[12px\] {
+  gap: 12px;
 }
 
-.border-\[5px\] {
-  border-width: 5px;
+.gap-\[60px\] {
+  gap: 60px;
 }
 
-.border-\[\] {
-  border-color: ;
+.border {
+  border-width: 1px;
 }
 
-.p-\[20px\] {
-  padding: 20px;
+.border-none {
+  border-style: none;
 }
 
-.p-\[20p\] {
-  padding: 20p;
+.p-\[14px\] {
+  padding: 14px;
 }
 
-.text-center {
-  text-align: center;
+.text-\[14px\] {
+  font-size: 14px;
 }
 
-.text-\[30px\] {
-  font-size: 30px;
+.text-\[18px\] {
+  font-size: 18px;
 }
 
-.text-\[25px\] {
-  font-size: 25px;
+.uppercase {
+  text-transform: uppercase;
 }
 
-@media not all and (min-width: 640px) {
-  .max-sm\:gap-\[20px\] {
-    gap: 20px;
+.italic {
+  font-style: italic;
+}
+
+.text-\[\#2D2F30\] {
+  --tw-text-opacity: 1;
+  color: rgb(45 47 48 / var(--tw-text-opacity, 1));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.ring {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
   }
-}
 
-@media (min-width: 640px) {
-  .sm\:flex {
+  .md\:flex {
     display: flex;
   }
 
-  .sm\:flex-col {
-    flex-direction: column;
+  .md\:hidden {
+    display: none;
   }
 
-  .sm\:gap-\[20px\] {
-    gap: 20px;
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:gap-\[50px\] {
+    gap: 50px;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:block {
-    display: block;
-  }
-
-  .lg\:flex {
-    display: flex;
-  }
-
-  @media (min-width: 1024px) {
-    .lg\:lg\:hidden {
-      display: none;
-    }
-  }
-
-  .lg\:hidden {
-    display: none;
-  }
-
-  .lg\:w-\[80\%\] {
-    width: 80%;
-  }
-
-  .lg\:w-\[\] {
-    width: ;
-  }
-
-  .lg\:w-\[20\%\] {
-    width: 20%;
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
-  }
-
-  .lg\:gap-0 {
-    gap: 0px;
+  .lg\:gap-\[200px\] {
+    gap: 200px;
   }
 }
